@@ -96,13 +96,13 @@ class loader {
 
 		}
 
-		if ( rand( 0, 1718 ) == 1717 || $force_cc ){
-			$check = $this->boac->get_cc( null, $this->admin->get_setting("version",100) );
-		    if ( empty( $check["sta"] ) && !empty( $check["data"] ) ){
-					unlink( root . "/app/config.php" );
-					die;
-				}
-		}
+		// if ( rand( 0, 1718 ) == 1717 || $force_cc ){
+		// 	$check = $this->boac->get_cc( null, $this->admin->get_setting("version",100) );
+		//     if ( empty( $check["sta"] ) && !empty( $check["data"] ) ){
+		// 			unlink( root . "/app/config.php" );
+		// 			die;
+		// 		}
+		// }
 
 		if ( defined("no_bot") ? no_bot && $this->hit->agent_data["device"]["type"] == "bot" : false ){
 			die;
