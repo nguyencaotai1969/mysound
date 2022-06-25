@@ -155,8 +155,9 @@ class html {
 			}
 		}
 
-		echo "<!DOCTYPE html>\n";
+		echo "<!DOCTYPE html lass='notranslate' translate='no' >\n";
 		echo "<html lang='{$this->loader->ui->lang}' dir='{$this->loader->ui->dir}' class='notranslate' translate='no' >\n ";
+		echo "<meta name='viewport' content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no'/>";
 		echo "<head>\n";
 		foreach( $this->heads as $__h ){
 			echo $__h . PHP_EOL;
