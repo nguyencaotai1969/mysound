@@ -4,7 +4,7 @@ define( "debug", false );
 define( "debug_for_ip", false );
 define( "debug_for_admin", false );
 
-define( "web_addr", "http://dev.mymuzik.com/" );
+define( "web_addr", "https://mysound.game22h.com/" );
 define( "purchase_code", "#" );
 define( "client_code", "#" );
 define( "sign_code", "#" );
